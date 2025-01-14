@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./my function.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <ul class="navbar-main">
+                <div class="imag-logo"><img src="OIP.jpg" alt=""></div>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Books.html">Books</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- <table border="1">
+        <caption class="caption">
+            جدول المعلومات حول الكتب
+        </caption>
+        <tr>
+            <th>اختيار</th>
+            <th>إظهار التفاصيل</th>
+            <th>السعر</th>
+            <th>العنوان</th>
+            <th>رمزالكتاب ISBN</th>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td><input class="my-checkbox" type="checkbox" onclick="toggleDetail(this)">
+                <div id="detailsContainer"></div>
+            </td>
+            <td>25000 ل.س</td>
+            <td>الف ليلة وليلة</td>
+            <td>978-9770916738</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td><input class="my-checkbox" type="checkbox" onclick="toggleDetail2(this)">
+                <div id="detailsContainer2"></div>
+            </td>
+            <td>25000 ل.س</td>
+            <td>موسم الهجرة إلى الشمال</td>
+            <td>978-9953891718</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td><input class="my-checkbox" type="checkbox" onclick="toggleDetail3(this)">
+                <div id="detailsContainer3"></div>
+            </td>
+            <td>12000 ل.س</td>
+            <td>الف ليلة وليلة</td>
+            <td>978-9770916738</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td><input class="my-checkbox" type="checkbox" onclick="toggleDetail4(this)">
+                <div id="detailsContainer4"></div>
+            </td>
+            <td>10000 ل.س</td>
+            <td>الخبز الحافي</td>
+            <td>978-9953451080</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td><input class="my-checkbox" type="checkbox" onclick="toggleDetail5(this)">
+                <div id="detailsContainer5"></div>
+            </td>
+            <td>23000 ل.س</td>
+            <td>ابتسم فأنت ميت</td>
+            <td>978-9770985318</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td><input class="my-checkbox" type="checkbox" onclick="toggleDetail6(this)">
+                <div id="detailsContainer6"></div>
+            </td>
+            <td>53000 ل.س</td>
+            <td>أنني اتعفن رعبا</td>
+            <td>978-9770985318</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td><input class="my-checkbox" type="checkbox" onclick="toggleDetail7(this)">
+                <div id="detailsContainer7"></div>
+            </td>
+            <td>43000 ل.س</td>
+            <td>نصف الميت</td>
+            <td>978-3570985318</td>
+        </tr>
+    </table> -->
+
+    <table border="1" id="">
+        <caption class="caption">جدول المعلومات حول الكتب</caption>
+        <tr>
+            <th>اختيار</th>
+            <th>إظهار التفاصيل</th>
+            <th>السعر</th>
+            <th>العنوان</th>
+            <th>رمزالكتاب ISBN</th>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td>
+                <input class="my-checkbox" type="checkbox" onclick="toggleDetail(this, 'detailsContainer1')">
+                <div id="detailsContainer1"></div>
+            </td>
+            <td>25000 ل.س</td>
+            <td>الف ليلة وليلة</td>
+            <td>978-9770916738</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td>
+                <input class="my-checkbox" type="checkbox" onclick="toggleDetail(this, 'detailsContainer2')">
+                <div id="detailsContainer2"></div>
+            </td>
+            <td>25000 ل.س</td>
+            <td>موسم الهجرة إلى الشمال</td>
+            <td>978-9953891718</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td>
+                <input class="my-checkbox" type="checkbox" onclick="toggleDetail(this, 'detailsContainer3')">
+                <div id="detailsContainer3"></div>
+            </td>
+            <td>12000 ل.س</td>
+            <td>الف ليلة وليلة</td>
+            <td>978-9770916738</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td>
+                <input class="my-checkbox" type="checkbox" onclick="toggleDetail(this, 'detailsContainer4')">
+                <div id="detailsContainer4"></div>
+            </td>
+            <td>10000 ل.س</td>
+            <td>الخبز الحافي</td>
+            <td>978-9953451080</td>
+        </tr>
+        <tr>
+            <td><input type="radio" name="qq"></td>
+            <td>
+                <input class="my-checkbox" type="checkbox" onclick="toggleDetail(this, 'detailsContainer5')">
+                <div id="detailsContainer5"></div>
+            </td>
+            <td>23000 ل.س</td>
+            <td>ابتسم فأنت ميت</td>
+            <td>978-9770985318</td>
+        </tr>
+    </table>
+    
+
+
+   
+        <div class="outer">
+            <button id="showbtn" onclick="showPopup()">متابعة</button>
+    
+            <div class="popup" id="popup">
+                <h2>نموذج المعلومات</h2>
+                <form name="myForm" onsubmit="return validateForm()">
+                    الاسم الكامل: <input type="text" name="fullname" pattern="^[\u0621-\u064A\s]+$" title="يجب إدخال أحرف هجائية فقط باللغة العربية" required>
+                    <br />
+                    الرقم الوطني: <input type="text" name="nationalID" maxlength="11" pattern="^(01|02|03|04|05|06|07|08)(\d{11})$" title="يجب أن يكون الرقم الوطني مكونًا من 11 خانة تبدأ بأرقام المحافظة (1-8)" required>
+                    <br />
+                    تاريخ الميلاد: <input type="date" name="birthdate" required>
+                    <br />
+                    رقم الموبايل: <input type="text" name="mobile" pattern="^(09|10|11|12|13|14|15|16|17|18|19)[0-9]{8}$" title="رقم الموبايل يجب أن يكون مكونًا من 10 أرقام وبدءًا بـ 09 أو 10..." >
+                    <br />
+                    الإيميل: <input type="email" name="email">
+                    <br />
+                    <input type="submit" value="إرسال">
+                </form>
+                <button id="closebtn" onclick="closePopup()">إغلاق</button>
+            </div>
+        </div>
+</body>
+<script src="./my founction.js"></script>
+
+</html>
